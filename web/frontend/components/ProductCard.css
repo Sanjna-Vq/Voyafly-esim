@@ -1,0 +1,148 @@
+
+
+@media only screen and (max-width: 767px) {
+    .data_outer {
+        width: 997px;
+        overflow-x: scroll;
+    }
+
+    .Polaris-TextContainer {
+        overflow: hidden;
+    }
+}  
+
+
+.total {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 0;
+    font-size: 13px;
+}
+  p.Polaris-Text--root {
+    margin: 3px 5px;
+}
+.Polaris-LegacyCard__Section {
+    padding: 5px 5px!important;
+}
+table {
+    width: 100%;
+    margin: 15px 0;
+}
+button.Polaris-Button.Polaris-Button--primary {
+    background: #000;
+}
+.details_inner button.Polaris-Button {width: 90px !important;font-size: 11px !important;height: 17px !important;padding: 0 !important;min-height: 22px;background: #000;color: #fff;}
+.details_inner button.Polaris-Button span{font-size: 11px;}
+.details h6:last-child {
+    border-bottom: none;
+}
+.details h6 {
+    border-bottom: 1px solid #000;
+    padding: 0 5px;
+    margin: 0;
+}
+.button_group {
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+}
+.button_group button.Polaris-Button {
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+}
+.button_group button.Polaris-Button.Polaris-Button--disabled {
+    margin: 0;
+    background: transparent;
+    padding: 0;
+}
+.modal_email_section input {
+    border: none;
+    border-bottom: 1px solid;
+    text-align: left;
+    display: inline-block;
+    padding: 0;
+    margin: 1px;
+    width: 133px;
+}
+input:focus-visible {
+    outline: none;
+
+}
+.modal_email_section span {
+    margin: 0 10px;
+}
+
+th {
+    text-align: left;
+    padding-left: 6px;
+}
+
+.details h6 {
+    align-items: center;
+    display: flex;
+    height: 70px;
+}
+
+.Polaris-LegacyCard__Header{
+    margin: 5px !important;
+    padding:2px 0px !important;
+}
+
+.heading_outer{
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    margin: 10px 2px;
+}
+
+.heading_outer h2{
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+
+.heading_outer p{
+    margin-right: 5px;
+}
+
+/* CSS for centering the progress bar popup */
+.progress-bar-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .progress-bar-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px; /* Set the desired width for the progress bar popup */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Optional: Style the progress bar and percentage text if needed */
+  .progress-bar-container .Polaris-ProgressBar {
+    margin-bottom: 10px;
+  }
+  
+  .progress-bar-container span {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  

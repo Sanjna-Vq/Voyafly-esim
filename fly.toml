@@ -1,0 +1,29 @@
+# fly.toml app configuration file generated for voyafly-esim-app on 2023-11-09T19:27:37+05:30
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = "voyafly-esim-app"
+primary_region = "hkg"
+
+[build]
+
+[env]
+  HOST = "https://voyafly-esim-app.fly.dev"
+  PORT = "8081"
+  SCOPES = "write_products, read_products"
+  SHOPIFY_API_KEY = "8242c6108ecabe728cd27217e40735a6"
+
+
+[[mounts]]
+  source = "voyafly_esim"
+  destination = "/data"
+
+
+[http_service]
+  internal_port = 8081
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ["app"]

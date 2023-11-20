@@ -1,0 +1,20 @@
+# flyctl launch added from web/frontend/.gitignore
+# Dependency directory
+web/frontend/**/node_modules
+
+# Ignore Apple macOS Desktop Services Store
+web/frontend/**/.DS_Store
+
+# Logs
+web/frontend/**/logs
+web/frontend/**/*.log
+
+# vite build output
+web/frontend/**/dist
+
+# Partners can use npm, yarn or pnpm with the CLI.
+# We ignore lock files so they don't get a package manager mis-match
+# Without this, they may get a warning if using a different package manager to us
+web/frontend/**/yarn.lock
+web/frontend/**/package-lock.json
+fly.toml
